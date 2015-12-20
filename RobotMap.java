@@ -29,14 +29,14 @@ public class RobotMap {
 	//*************************** Digital Sensors ******************************
 	//**************************************************************************
 	  
-	public static final int BUMPER_SWITCH 								    = 5;
+	public static final int BUMPER_SWITCH 					 = 5;
 	    
 	//**************************************************************************
 	//*************************** Pneumatics ***********************************
 	//**************************************************************************
 	 
-	public static final int SOLENOID_A										= 1;
-	public static final int SOLENOID_B				 						= 2;
+	public static final int SOLENOID_A					= 1;
+	public static final int SOLENOID_B				 	= 2;
 	 
 	//**************************************************************************
     //********************* DRIVE ENCODER CONSTANTS ****************************
