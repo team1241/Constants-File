@@ -11,11 +11,8 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
  */
 public class OI {
     
-	Joystick drivePad;
+    Joystick drivePad;
     Joystick toolPad;
-    JoystickButton startButtonTool;
-    JoystickButton BButtonTool;
-	
     /**
      * Initializes the joystick objects 
      */
@@ -23,8 +20,6 @@ public class OI {
     {
         drivePad = new Joystick (GamepadConstants.DRIVE_USB_PORT);
         toolPad = new Joystick (GamepadConstants.TOOL_USB_PORT);
-        startButtonTool = new JoystickButton(toolPad, GamepadConstants.START_BUTTON);
-        BButtonTool = new JoystickButton(toolPad, GamepadConstants.B_BUTTON);
     }
     
     /**
@@ -303,11 +298,17 @@ public class OI {
         return toolPad.getRawButton(GamepadConstants.BACK_BUTTON);
     }
     
+    /** 
+     * @return Returns corresponding value (true or false) when button is pressed
+     */
     public boolean getToolLeftButton()
     {
         return toolPad.getRawButton(GamepadConstants.LEFT_ANALOG_BUTTON);
     }
     
+    /** 
+     * @return Returns corresponding value (true or false) when button is pressed
+     */
     public boolean getToolRightButton()
     {
         return toolPad.getRawButton(GamepadConstants.RIGHT_ANALOG_BUTTON);
