@@ -1,10 +1,5 @@
-package org.usfirst.frc.team1241.robot;
-
 /**
  *	These mappings are for the Logitech F310
- *
- * @author Sagar
- * @author Mahrus Kazi
  */
 public class GamepadConstants {
     
