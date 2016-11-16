@@ -124,3 +124,13 @@ public class PIDController {
 
 		return output;
 	}
+	
+	/**
+	 * Checks if is done.
+	 *
+	 * @return true, if is done
+	 */
+	public boolean isDone() {
+		return atTarget;
+	}
+}
